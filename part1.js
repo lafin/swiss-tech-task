@@ -15,8 +15,8 @@ const that = module.exports = {
       if (!tmpResults.length) {
         continue;
       }
-      for (let i = 0; i < tmpResults.length; i++) {
-        results.push([item].concat(tmpResults[i]));
+      for (const res of tmpResults) {
+        results.push([item].concat(res));
       }
     }
     return results;
