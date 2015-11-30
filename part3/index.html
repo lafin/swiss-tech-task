@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style type="text/css">
+      #images img {
+        max-height: 200px;
+      }
+    </style>
+    <section>
+      <form id="fileInfo">
+        <input type="file" id="fileInput" name="files"/>
+        <button type="button" onclick="send();">Connect</button>
+      </form>
+    </section>
+    <section id="images"></section>
+    <section id="info"></section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
